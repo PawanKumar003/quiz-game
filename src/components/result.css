@@ -1,0 +1,19 @@
+.mainresult {
+  background: #00807e;
+  height: 150px;
+  /* padding-top: 10%; */
+}
+.resultText {
+  font-size: 2rem;
+  color: white;
+}
+.btn1 {
+  border: none;
+  background: palegreen;
+  outline: none;
+  padding: 8px 40px;
+  font-size: 1rem;
+}
+.btn1:hover {
+  background: #2dd82d;
+}

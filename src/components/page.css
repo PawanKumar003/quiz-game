@@ -1,0 +1,41 @@
+.mainPage {
+  width: 100%;
+  background: grey;
+  padding: 40px 0px;
+}
+.containpage {
+  text-align: center;
+  width: 500px;
+  margin: 0 auto;
+  background: green;
+  height: 100%;
+}
+.gamestart {
+  text-align: left;
+  font-size: 1.5rem;
+  font-weight: 700;
+  background-color: black;
+  color: #fff;
+  padding: 20px;
+}
+.bodyContain {
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+}
+.pTag {
+  font-size: 1.3rem;
+  font-weight: 500;
+  text-align: left;
+  padding: 0px 20px;
+}
+.btnDiv {
+  text-align: left;
+  padding: 0 20px;
+}
+.btn {
+  background: aquamarine;
+  border: none;
+  padding: 5px 30px;
+  margin-right: 10px;
+  cursor: pointer;
+}
