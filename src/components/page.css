@@ -1,14 +1,15 @@
 .mainPage {
   width: 100%;
-  background: grey;
+  background: #1abc9c;
   padding: 40px 0px;
 }
 .containpage {
   text-align: center;
   width: 500px;
   margin: 0 auto;
-  background: green;
+  background: #16a085;
   height: 100%;
+  color: white;
 }
 .gamestart {
   text-align: left;
@@ -26,7 +27,7 @@
   font-size: 1.3rem;
   font-weight: 500;
   text-align: left;
-  padding: 0px 20px;
+  padding: 20px 20px;
 }
 .btnDiv {
   text-align: left;
@@ -38,4 +39,5 @@
   padding: 5px 30px;
   margin-right: 10px;
   cursor: pointer;
+  font-size: 1.2rem;
 }

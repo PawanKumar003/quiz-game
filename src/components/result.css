@@ -1,11 +1,15 @@
 .mainresult {
   background: #00807e;
   height: 150px;
-  /* padding-top: 10%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .resultText {
   font-size: 2rem;
   color: white;
+  padding-bottom: 31px;
 }
 .btn1 {
   border: none;
