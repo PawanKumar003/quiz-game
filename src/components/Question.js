@@ -6,11 +6,10 @@ const Question = (props) => {
   const { getScore } = props;
 
   const clickHandler = (e) => {
-    getScore(e.target.dataset.answerId == props.data.answer ? 1 : 0);
+    getScore(Number(e.target.dataset.answerId) === props.data.answer ? 1 : 0);
     setStatus(false);
     setBtnName(e.target.innerText);
     e.target.disabled = "true";
-    console.log(e.target.innerText);
   };
 
   return (
@@ -24,6 +23,7 @@ const Question = (props) => {
                 onClick={clickHandler}
                 className="btn"
                 data-answer-id={key}
+                key={key}
               >
                 {value}
               </button>

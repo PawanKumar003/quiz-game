@@ -5,19 +5,25 @@
 }
 .containpage {
   text-align: center;
-  width: 500px;
+  width: 660px;
   margin: 0 auto;
   background: #16a085;
   height: 100%;
   color: white;
+  -webkit-box-shadow: -1px 4px 21px -3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 4px 21px -3px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 4px 21px -3px rgba(0, 0, 0, 0.75);
+  border-radius: 0px 0px 10px 10px;
 }
 .gamestart {
   text-align: left;
   font-size: 1.5rem;
   font-weight: 700;
-  background-color: black;
+  /* background-color: black; */
   color: #fff;
   padding: 20px;
+  background: linear-gradient(90deg, rgb(58 172 180) 0%, rgb(29 253 194) 100%);
+  border-radius: 10px 10px 0px 0px;
 }
 .bodyContain {
   border-bottom: 1px solid black;
@@ -40,4 +46,5 @@
   margin-right: 10px;
   cursor: pointer;
   font-size: 1.2rem;
+  border-radius: 15px;
 }

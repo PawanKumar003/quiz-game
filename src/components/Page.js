@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import "./page.css";
 import quizData from "../data/quzedata";
 import Question from "./Question";
@@ -9,14 +9,18 @@ const Page = (props) => {
   const [score, setScore] = useState(0);
   const [show, setShow] = useState(false);
   const [text, setText] = useState("");
+  const [validtext, setValidtext] = useState("");
+  const [showErrormsg, setShowErrormsg] = useState();
 
   const getScore = (score1) => {
-    console.log(score1, "df");
+    setShowErrormsg(score1);
+    setValidtext("");
+
     setScore(score + score1);
   };
 
   const resultHandler = () => {
-    if (score) {
+    if (showErrormsg >= 0) {
       setShow(true);
       switch (score) {
         case 1:
@@ -37,12 +41,19 @@ const Page = (props) => {
         default:
           setText("Play Again");
       }
+    } else {
+      setValidtext("Please click one button");
     }
   };
 
   const showData = (val) => {
-    return setShow(val);
+    setShow(val);
+    setScore(0);
   };
+
+  useEffect(() => {
+    setShowErrormsg();
+  }, [setValidtext]);
 
   return (
     <div className="mainPage">
@@ -62,6 +73,7 @@ const Page = (props) => {
             Submit
           </button>
         ) : null}
+        {score === 0 ? validtext : ""}
 
         {show ? <Result showData={showData} text={text} score={score} /> : null}
       </div>

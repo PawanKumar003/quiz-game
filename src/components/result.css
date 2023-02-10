@@ -1,10 +1,11 @@
 .mainresult {
   background: #00807e;
-  height: 150px;
+  height: 243px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  border-radius: 10px;
 }
 .resultText {
   font-size: 2rem;
@@ -16,7 +17,9 @@
   background: palegreen;
   outline: none;
   padding: 8px 40px;
-  font-size: 1rem;
+  font-size: 1.3rem;
+  box-shadow: 1px 3px 0px 1.3px;
+  border-radius: 30px;
 }
 .btn1:hover {
   background: #2dd82d;
